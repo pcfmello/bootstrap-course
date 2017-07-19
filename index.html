@@ -730,11 +730,44 @@
                 </div>
             </section>
 
+            <hr>
+
+            <section>
+                <div class="container">
+                    <h1>Popover</h1>
+                    <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                        Popover on left
+                    </button>
+
+                    <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                        Popover on top
+                    </button>
+
+                    <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                        Popover on bottom
+                    </button>
+
+                    <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                        Popover on right
+                    </button>
+
+                </div>
+            </section>
+
         </main>
+
+        <footer class="text-center" style="margin-top: 15px; padding: 15px 0; background-color: #3c3c3c; color: white;">
+            <p>Desenvolvido por Paulo Cesar Ferreira de Mello</p>
+        </footer>
 
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+        <script>
+            $(function () {
+                $('[data-toggle="popover"]').popover()
+            })
+        </script>
     </body>
 </html>
